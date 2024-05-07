@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'treinamento';
+  inputText = "Texto Inicial Alterado";
+  inputType = "text";
+  isDisabled = false;
+
+
+
+  enableInput(){
+    this.isDisabled = false;
+  }
+
+
+  disableInput(){
+      this.isDisabled = true;
+
+  }
 }
