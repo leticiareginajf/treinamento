@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   inputText = "Texto Inicial Alterado";
   inputType = "text";
-  isDisabled = false;
+  isDisabled = true;
 
 
 
@@ -19,6 +19,22 @@ export class AppComponent {
 
   disableInput(){
       this.isDisabled = true;
+
+  }
+
+  setPasswordTypeInput(){
+    this.inputType = 'password';
+  }
+
+  setTextTypeInput(){
+    this.inputType = 'text'
+  }
+
+
+  logInputText(){
+
+
+    console.log(this.inputText);
 
   }
 }
