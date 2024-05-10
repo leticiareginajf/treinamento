@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   buttonTitle = 'Título de botão';
   buttonDisable = false;
+
+
+  onButtonClick(){
+    this.buttonTitle = 'TITULO ALTERADOOOOOOOO';
+    this.buttonDisable = !this.buttonDisable;
+  }
   
 }
 
