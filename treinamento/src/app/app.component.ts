@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  inputText = "Texto Inicial Alterado";
+  buttonTitle = 'Título de botão';
+  buttonDisable = false;
+  
+}
+
+
+/*
+
+inputText = "Texto Inicial Alterado";
   inputType = "text";
   isDisabled = true;
 
@@ -38,8 +46,20 @@ export class AppComponent {
 
   }
 
-  handleInputKeyup(event : any){
+  handleInputKeyup(event: KeyboardEvent){
+    
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
+
+  }
+
+
+  handleInputEvent(event: Event){
+
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
     console.log(event);
 
   }
-}
+
+*/

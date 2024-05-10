@@ -1,10 +1,11 @@
-
+<!--(heyup)="handleInputKeyup($event)" 
 
 <input  id="meu-input" 
 [value]="inputText" 
 [type]="inputType" 
 [disabled]="isDisabled"
-(heyup)="handleInputKeyup($event)" />
+
+(input)="handleInputEvent($event)"/>
 
 <br />
 
@@ -19,4 +20,10 @@
 
 <br />
 
-<button (click)="logInputText()">Log</button>
+<button (click)="logInputText()">Log</button>-->
+
+
+<button [attr.title]="buttonTitle">Teste</button>
+
+
+<button [attr.disabled]="buttonDisable ? true : null">Disabled</button>
