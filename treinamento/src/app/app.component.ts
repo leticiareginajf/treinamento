@@ -37,4 +37,9 @@ export class AppComponent {
     console.log(this.inputText);
 
   }
+
+  handleInputKeyup(event : any){
+    console.log(event);
+
+  }
 }
