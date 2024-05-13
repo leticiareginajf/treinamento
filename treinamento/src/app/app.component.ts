@@ -6,15 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  buttonTitle = 'Título de botão';
-  buttonDisable = false;
 
-
-  onButtonClick(){
-    this.buttonTitle = 'TITULO ALTERADOOOOOOOO';
-    this.buttonDisable = !this.buttonDisable;
-  }
-  
+  widthButton1 = '110px';
+  widthButton2 = 130;
 }
 
 
@@ -66,6 +60,18 @@ inputText = "Texto Inicial Alterado";
     console.log(currentText);
     console.log(event);
 
+  }
+
+
+
+
+    buttonTitle = 'Título de botão';
+  buttonDisable = false;
+
+
+  onButtonClick(){
+    this.buttonTitle = 'TITULO ALTERADOOOOOOOO';
+    this.buttonDisable = !this.buttonDisable;
   }
 
 */
