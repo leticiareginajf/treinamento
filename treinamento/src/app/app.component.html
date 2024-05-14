@@ -42,4 +42,10 @@
 <button [style.width.px]="widthButton2" [style.backgroundColor]="'pink'">Botão 2</button>
 <br/>
 
-<button [style]="'width: 140px; backgroundColor: brown;'">Botão 3</button>
+<button [style]="'width: 140px; background-color: brown;'">Botão 3</button>
+<br/>
+<button [style]="{width: '150px', backgroundColor: 'orange'}">Botão 4</button>
+<br/>
+<button [style]="styleObj">Botão 5</button>
+<br/>
+<button (click)="updateStyleObj()">Atualizar obj</button>

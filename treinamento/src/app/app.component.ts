@@ -9,6 +9,16 @@ export class AppComponent {
 
   widthButton1 = '110px';
   widthButton2 = 130;
+  styleObj = {
+    width: '160px', 
+    backgroundColor: 'grey',
+  }
+
+  updateStyleObj(){
+    console.log('updateStyleObj');
+    this.styleObj.width = '170px';
+    this.styleObj.backgroundColor = 'lightblue';
+  }
 }
 
 
