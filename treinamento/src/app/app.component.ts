@@ -19,6 +19,20 @@ export class AppComponent {
     this.styleObj.width = '170px';
     this.styleObj.backgroundColor = 'lightblue';
   }
+
+  updateStyleObjCorrect(){
+    console.log('updateStyleObjCorrect');
+
+    this.styleObj = {
+      width: '170px',
+      backgroundColor: 'lightblue'
+    };
+
+  }
+
+  updateWidth(){
+    this.widthButton2 = 200
+  }
 }
 
 
