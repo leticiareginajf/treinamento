@@ -30,10 +30,7 @@
 <button (click)="onButtonClick()">Mudar Props</button>
 
 
--->
-
-
-
+----CSS BINDING-----
 
 <button style="width: 100px; background-color: aqua;">Botão 0</button>
 <br/>
@@ -53,3 +50,8 @@
 <button (click)="updateStyleObjCorrect()">Atualizar obj correto</button>
 <br/>
 <button (click)="updateWidth()">Atualizar width</button>
+
+-->
+
+<button [class.red-button]="false">Vermelho</button>
+<button [class.green-button]="true">Verde</button>

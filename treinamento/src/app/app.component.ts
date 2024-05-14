@@ -7,32 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  widthButton1 = '110px';
-  widthButton2 = 130;
-  styleObj = {
-    width: '160px', 
-    backgroundColor: 'grey',
-  }
+  
 
-  updateStyleObj(){
-    console.log('updateStyleObj');
-    this.styleObj.width = '170px';
-    this.styleObj.backgroundColor = 'lightblue';
-  }
 
-  updateStyleObjCorrect(){
-    console.log('updateStyleObjCorrect');
-
-    this.styleObj = {
-      width: '170px',
-      backgroundColor: 'lightblue'
-    };
-
-  }
-
-  updateWidth(){
-    this.widthButton2 = 200
-  }
 }
 
 
@@ -97,5 +74,36 @@ inputText = "Texto Inicial Alterado";
     this.buttonTitle = 'TITULO ALTERADOOOOOOOO';
     this.buttonDisable = !this.buttonDisable;
   }
+
+
+  ---CSS BINDING----
+widthButton1 = '110px';
+  widthButton2 = 130;
+  styleObj = {
+    width: '160px', 
+    backgroundColor: 'grey',
+  }
+
+  updateStyleObj(){
+    console.log('updateStyleObj');
+    this.styleObj.width = '170px';
+    this.styleObj.backgroundColor = 'lightblue';
+  }
+
+  updateStyleObjCorrect(){
+    console.log('updateStyleObjCorrect');
+
+    this.styleObj = {
+      width: '170px',
+      backgroundColor: 'lightblue'
+    };
+
+  }
+
+  updateWidth(){
+    this.widthButton2 = 200
+  }
+}
+
 
 */
